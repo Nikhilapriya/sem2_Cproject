@@ -6,7 +6,7 @@ int main(){
     printf("\n\n\n\t\tplease cast your vote :)\n\npress 1 to cast vote.......\n");
     scanf("%d",&cast);
     if (cast==1){
-        printf("select the choice you want to vote for\n\t1. a\n\t2. b\n\t3. c\n\t4. d\n\t5. e\n\t6. f\n");
+        printf("select the choice you want to vote for\n\t1. JOE BIDEN\n\t2. BERNIE SANDERS\n\t3. ELIZABETH WARREN\n\t4. MICHEAL BLOOMBERG\n\t5. AMY KLOBUCHAR\n\t6. TULSI GLABBARD\n");
         scanf("%d",&vote);
         switch(vote){
         case 1:printf("THANKS!! for voting..^-^\n");
@@ -35,9 +35,9 @@ int main(){
         scanf("%d",&result);
         if (result==2){
             printf("-------------------the voting results-----------------\n");
-            printf("a             b            c           d           e             f\n");
-            printf("____________________________________________________________________\n\n");
-            printf("%d           %d           %d          %d          %d            %d\n",vote1,vote2,vote3,vote4,vote5,vote6);
+            printf("JOE BIDEN             BERNIE SANDERS            ELIZABETH WARREN           MICHEAL BLOOMBERG           AMY KLOBUCHAR             TULSI GLABBARD\n");
+            printf("__________________________________________________________________________________________________________________________________________________\n\n");
+            printf("%d                        %d                         %d                           %d                        %d                          %d\n",vote1,vote2,vote3,vote4,vote5,vote6);
         }
     }
     }
