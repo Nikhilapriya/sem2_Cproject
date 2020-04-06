@@ -86,7 +86,7 @@ int main(){
     int c=0,i=0;
     int vote_no,zero,one,bjp,tdp,aitc,cpi,inc,ncp,v;
     bjp=tdp=aitc=cpi=inc=ncp=0;
-    printf("\t\t\t\t\t\welcome\n");
+    printf("\t\t\t\t\t\twelcome\n");
     printf("\n1)LOGIN TO VOTE\n2)exit\n\n");
 
     do{
