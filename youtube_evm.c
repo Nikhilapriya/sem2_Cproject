@@ -21,18 +21,18 @@ int main()
     system("cls");
     printf("\n\n\n");
     printf("\t\t\t\t\t-----WELCOME TO ONLINE VOTING-----\t\t\t\t\t\n");
-    printf("\t\t\t\t\t*********************************************\t\t\t\t\t\n");
-    printf("\t\t\t-----please enter one(1) for logging vote main loges\n");
+    printf("\t\t\t\t*********************************************\t\t\t\t\t\n");
+    printf("\n\n\t\t\t\t-----please enter one(1) for main menu-------\n");
     int B;
     scanf("%d",&B);
     if(B==1)
     {
-        main_loges();
+        main_menu();
     }
     return 0;
 }
 
-void main_loges()
+void main_menu()
 {
     system("cls");
     printf("\n\n\n");
@@ -94,10 +94,26 @@ void voter_insert()
     while(temp != NULL)
     {
         if((strcmp(temp->id,"1000001")==0) &&(strcmp(temp->name,"nikhila priya")==0) &&(strcmp(temp->dob,"22-09-2001")==0) &&(strcmp(temp->father_name,"kishore kumar")==0) &&(strcmp(temp->mother_name,"jyothirmayi")==0)  ||
-           (strcmp(temp->id,"1000002")==0) &&(strcmp(temp->name,"varshan")==0) &&(strcmp(temp->dob,"23-04-2002")==0) &&(strcmp(temp->father_name,"ramprasad")==0) &&(strcmp(temp->mother_name,"lakshmi")==0)  ||
+           (strcmp(temp->id,"1000002")==0) &&(strcmp(temp->name,"manu shree")==0) &&(strcmp(temp->dob,"04-10-2002")==0) &&(strcmp(temp->father_name,"guru prasad")==0) &&(strcmp(temp->mother_name,"rohini")==0)  ||
            (strcmp(temp->id,"1000003")==0) &&(strcmp(temp->name,"himaja")==0) &&(strcmp(temp->dob,"09-09-1999")==0) &&(strcmp(temp->father_name,"ravindra")==0) &&(strcmp(temp->mother_name,"chinmayi")==0)  ||
            (strcmp(temp->id,"1000004")==0) &&(strcmp(temp->name,"sania jain")==0) &&(strcmp(temp->dob,"17-01-2000")==0) &&(strcmp(temp->father_name,"vikram jain")==0) &&(strcmp(temp->mother_name,"pinky")==0)  ||
-           (strcmp(temp->id,"1000005")==0) &&(strcmp(temp->name,"rahul nair")==0) &&(strcmp(temp->dob,"30-11-1998")==0) &&(strcmp(temp->father_name,"sujeeth")==0) &&(strcmp(temp->mother_name,"mounika")==0))
+           (strcmp(temp->id,"1000005")==0) &&(strcmp(temp->name,"manas rao")==0) &&(strcmp(temp->dob,"11-05-1996")==0) &&(strcmp(temp->father_name,"harshadeep")==0) &&(strcmp(temp->mother_name,"harika")==0)  ||
+           (strcmp(temp->id,"1000005")==0) &&(strcmp(temp->name,"prabhav")==0) &&(strcmp(temp->dob,"19-03-2002")==0) &&(strcmp(temp->father_name,"mohan verma")==0) &&(strcmp(temp->mother_name,"padma sri")==0)  ||
+           (strcmp(temp->id,"1000006")==0) &&(strcmp(temp->name,"rashmika")==0) &&(strcmp(temp->dob,"23-10-19989")==0) &&(strcmp(temp->father_name,"vivek naidu")==0) &&(strcmp(temp->mother_name,"anushka")==0)  ||
+           (strcmp(temp->id,"1000007")==0) &&(strcmp(temp->name,"mahesh babu")==0) &&(strcmp(temp->dob,"10-06-1988")==0) &&(strcmp(temp->father_name,"ramesh")==0) &&(strcmp(temp->mother_name,"ananya pandey")==0)  ||
+           (strcmp(temp->id,"1000008")==0) &&(strcmp(temp->name,"allu arjun")==0) &&(strcmp(temp->dob,"15-08-1993")==0) &&(strcmp(temp->father_name,"suresh")==0) &&(strcmp(temp->mother_name,"rashmitha")==0)  ||
+           (strcmp(temp->id,"1000009")==0) &&(strcmp(temp->name,"smitha chawla")==0) &&(strcmp(temp->dob,"27-11-1991")==0) &&(strcmp(temp->father_name,"sudheer")==0) &&(strcmp(temp->mother_name,"pooja hegde")==0)  ||
+           (strcmp(temp->id,"10000010")==0) &&(strcmp(temp->name,"mamatha rai")==0) &&(strcmp(temp->dob,"25-08-1987")==0) &&(strcmp(temp->father_name,"mahan rao")==0) &&(strcmp(temp->mother_name,"lavanya")==0)  ||
+           (strcmp(temp->id,"10000011")==0) &&(strcmp(temp->name,"shilpa shetty")==0) &&(strcmp(temp->dob,"14-05-1992")==0) &&(strcmp(temp->father_name,"vishwaksen")==0) &&(strcmp(temp->mother_name,"shradha")==0)  ||
+           (strcmp(temp->id,"10000012")==0) &&(strcmp(temp->name,"amrita nair")==0) &&(strcmp(temp->dob,"13-04-1985")==0) &&(strcmp(temp->father_name,"ashoke")==0) &&(strcmp(temp->mother_name,"madhuri")==0)  ||
+           (strcmp(temp->id,"10000013")==0) &&(strcmp(temp->name,"anjali devi")==0) &&(strcmp(temp->dob,"11-08-2001")==0) &&(strcmp(temp->father_name,"srikanth shetty")==0) &&(strcmp(temp->mother_name,"priya prakash")==0)  ||
+           (strcmp(temp->id,"10000014")==0) &&(strcmp(temp->name,"susruth")==0) &&(strcmp(temp->dob,"07-07-1966")==0) &&(strcmp(temp->father_name,"tarak rama rao")==0) &&(strcmp(temp->mother_name,"sridevi")==0)  ||
+           (strcmp(temp->id,"10000015")==0) &&(strcmp(temp->name,"ravi krishna")==0) &&(strcmp(temp->dob,"21-04-1979")==0) &&(strcmp(temp->father_name,"balakrishna")==0) &&(strcmp(temp->mother_name,"hansika motwani")==0)  ||
+           (strcmp(temp->id,"10000016")==0) &&(strcmp(temp->name,"pradeep")==0) &&(strcmp(temp->dob,"28-09-1994")==0) &&(strcmp(temp->father_name,"lokesh varma")==0) &&(strcmp(temp->mother_name,"jasleen kaur")==0)  ||
+           (strcmp(temp->id,"10000017")==0) &&(strcmp(temp->name,"aadhya")==0) &&(strcmp(temp->dob,"09-12-1999")==0) &&(strcmp(temp->father_name,"vishesh nair")==0) &&(strcmp(temp->mother_name,"vihana")==0)  ||
+           (strcmp(temp->id,"10000019")==0) &&(strcmp(temp->name,"samyuktha swamy")==0) &&(strcmp(temp->dob,"13-06-1970")==0) &&(strcmp(temp->father_name,"sampath voleti")==0) &&(strcmp(temp->mother_name,"ayra yash")==0)  ||
+           (strcmp(temp->id,"10000019")==0) &&(strcmp(temp->name,"nihal ramaswamy")==0) &&(strcmp(temp->dob,"01-02-2000")==0) &&(strcmp(temp->father_name,"joseph")==0) &&(strcmp(temp->mother_name,"preethi sharma")==0)  ||
+           (strcmp(temp->id,"10000020")==0) &&(strcmp(temp->name,"rahul nair")==0) &&(strcmp(temp->dob,"30-11-1998")==0) &&(strcmp(temp->father_name,"sujeeth")==0) &&(strcmp(temp->mother_name,"mounika")==0))
            {
             cunt++;
             if(cunt>1)
@@ -122,7 +138,7 @@ void voter_insert()
                printf("\t\t\t\t\tPlease Re-enter\n\n");
                Sleep(300);
                system("pause");
-               main_loges();
+               main_menu();
            }
            temp=temp->next;
     }
@@ -150,7 +166,7 @@ void voting()
 
     int B,j;
     printf("\t\t\tPlease enter your choice - - -     ");
-    for(j=0;j<=1;j++)
+    for(j=1;j<=1;j++)
     {
         scanf("%d",&B);
         if(B==1)
@@ -166,18 +182,18 @@ void voting()
         if(B!=1 && B!=2 && B!=3 && B!=4 && B!=5)
         {
             printf("\t\t\tyour vote is INVALID\n");
-            main_loges();
+            main_menu();
         }
     }
     int R;
     system("cls");
     printf("\n\n\n\n");
-    printf("\t\t\t If you want to see present winner Enter one(1) OR zero(0) for main loges\n");
+    printf("\t\t\t If you want to see present winner Enter one(1) OR zero(0) for main menu\n");
     scanf("%d",&R);
     if(R==1)
         winner();
     if(R!=1)
-        main_loges();
+        main_menu();
 }
 
 
@@ -212,10 +228,10 @@ void show()
     Sleep(500);
 
     int R;
-    printf("\t\t\t Enter one(1) for main loges OR zero(0) for exit\n");
+    printf("\t\t\t Enter one(1) for main menu OR zero(0) for exit\n");
     scanf("%d",&R);
     if(R==1)
-        main_loges();
+        main_menu();
     else
         exitt();
 }
@@ -236,10 +252,10 @@ void winner()
         printf("\t\t\tThe present Winner is SARDAR PAWAR and he got %d votes\n\n\n\n\n",count5);
 
     int T;
-    printf("\t\t\t\t Enter one(1) for main loges or zero(0) for exit\n\n");
+    printf("\t\t\t\t Enter one(1) for main menu or zero(0) for exit\n\n");
     scanf("%d",&T);
     if(T==1)
-        main_loges();
+        main_menu();
     if(T!=1)
         exitt();
 }
@@ -266,13 +282,13 @@ void not_again()
     Sleep(300);
     printf("\t\t\t\t- - - - - -SO,YOU CANNOT VOTE AGAIN- - - - - -\n\n\n");
     Sleep(300);
-    printf("\t\t\t     if you want to see present winner Enter one(1) / two(2) for main loges /  zero(0) to exit\n\n");
+    printf("\t\t\t     if you want to see present winner Enter one(1) / two(2) for main menu /  zero(0) to exit\n\n");
     int R;
     scanf("%d",&R);
     if(R==1)
         winner();
     if(R==2)
-        main_loges();
+        main_menu();
     if((R!=1) || (R!=2))
         exitt();
 }
