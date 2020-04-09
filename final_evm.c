@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include<windows.h>
-#include<conio.h>
+
+//#include<windows.h>
+//#include<conio.h>
 
 typedef struct voter_info{
     char id[10];
@@ -25,6 +26,7 @@ int main()
     printf("\n\n\t\t\t\t-----please enter one(1) for main menu-------\n");
     int B;
     scanf("%d",&B);
+
     if(B==1)
     {
         main_menu();
@@ -59,9 +61,10 @@ void main_menu()
 }
 
 
-int cunt=0,count=0,R=3;
+//int cunt=0,count=0,R=3;
 void voter_insert()
 {
+    int cunt=0,count=0,R=3;
     node *temp;
     char name[25],dob[20],f_name[20],m_name[20],id[10];
     system("cls");
@@ -188,7 +191,7 @@ void voting()
     int R;
     system("cls");
     printf("\n\n\n\n");
-    printf("\t\t\t If you want to see present winner Enter one(1) OR zero(0) for main menu\n");
+    printf("\t\t\t If you want to see present winner Enter one(1) \n\n\t\t\t\tOR zero(0) for main menu\n");
     scanf("%d",&R);
     if(R==1)
         winner();
@@ -228,7 +231,7 @@ void show()
     Sleep(500);
 
     int R;
-    printf("\t\t\t Enter one(1) for main menu OR zero(0) for exit\n");
+    printf("\n\n\t\t\t Enter one(1) for main menu \n\n\t\t\t\tOR zero(0) for exit\n");
     scanf("%d",&R);
     if(R==1)
         main_menu();
@@ -266,7 +269,7 @@ void stop()
 {
     system("cls");
     printf("\n\n\n\n");
-    printf("\t - - - - - - - -(:- SORRY YOU CANNOT VOTE , WRONG ENTRY (3) TIMES\n\n");
+    printf("\t\t\t - - - - - - - -(:- SORRY YOU CANNOT VOTE , WRONG ENTRY (3) TIMES - - - - - - - -\n\n");
     Sleep(500);
     printf("\t\t\t* * * * * * ------------PLEASE TRY AGAIN AFTER A FEW MOMENTS------------* * * * * * *\n\n\n");
     Sleep(500);
